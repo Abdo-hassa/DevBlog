@@ -9,7 +9,7 @@ const transporter = nodemailer.createTransport(
   sendgridTransport({
     auth: {
       api_key:
-        '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',
+        'your_key',
     },
   }),
 );
@@ -120,7 +120,7 @@ exports.postRegister = (req, res, next) => {
       return transporter
             .sendMail({
               to: email,
-              from: 'abdallahhassann1998@gmail.com',
+              from: 'your_sender_mail',
               subject: 'Signup succeeded !',
               html: '<h1> You successfully signed up<h1>',
             }).catch((err) => {

@@ -21,7 +21,7 @@ const User = require('./models/user');
 
 //storing sessions in database
 const MongoDB_URI =
-  'mongodb+srv://abdallah:abd12345@cluster0.itsjp.mongodb.net/Blog?&w=majority';
+  'mongodb+srv://yourusername<password>@cluster0.itsjp.mongodb.net/<databasename>?&w=majority';
 
   const store = new MongoDBStore({
     uri: MongoDB_URI,
